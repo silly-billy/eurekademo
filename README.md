@@ -1,3 +1,3 @@
 # eurekademo
 EurekaServer在线扩容demo
-first pull
+add git address
