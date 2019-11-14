@@ -1,0 +1,8 @@
+package ${package.Service};
+
+import ${package.Entity}.${entity};
+import com.example.demo.core.common.base.BaseManager;
+
+public interface ${entity}Manager extends BaseManager<${entity}> {
+
+}

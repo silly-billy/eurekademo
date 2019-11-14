@@ -1,0 +1,9 @@
+package ${package.Mapper};
+
+import ${package.Entity}.${entity};
+import com.example.demo.core.common.base.BaseDao;
+
+
+public interface ${entity}Dao extends BaseDao<${entity}> {
+
+}
