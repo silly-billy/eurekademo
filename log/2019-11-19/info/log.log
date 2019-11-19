@@ -1,0 +1,21 @@
+2019-11-19 15:35:15.249 INFO  SocketClient - client send: i am socket
+2019-11-19 15:35:15.299 INFO  DeviceServerHandler - client: /127.0.0.1:52257 connect
+2019-11-19 15:35:15.378 INFO  DeviceServerHandler - receive socket Info:i am socket
+2019-11-19 15:35:29.189 INFO  DeviceServerHandler - client: /127.0.0.1:52302 connect
+2019-11-19 15:35:29.234 INFO  PipelineAdd - add webSocketHandler...
+2019-11-19 15:35:29.373 INFO  WebSocketClientHandler - channelRead0  false
+2019-11-19 15:35:29.384 INFO  WebSocketClientHandler - WebSocket Client connected!
+2019-11-19 15:35:29.384 INFO  WebSocketClientHandler - response headers[sec-websocket-extensions]:DefaultHttpHeaders[upgrade: websocket, connection: upgrade, sec-websocket-accept: TVw6FCgUOOw+uAF3XCwy5cKVrVI=, content-length: 0]
+2019-11-19 15:35:29.393 INFO  DeviceServerHandler - receive webSocket Info:i am websocket
+2019-11-19 15:35:30.385 INFO  DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-19 15:35:30.386 INFO  DeviceServerHandler - client: /127.0.0.1:52257 disconnect
+2019-11-19 15:36:14.236 INFO  DeviceServerHandler - client: /127.0.0.1:52302 disconnect
+2019-11-19 15:36:21.466 INFO  DeviceServerHandler - client: /127.0.0.1:52370 connect
+2019-11-19 15:36:21.503 INFO  PipelineAdd - add webSocketHandler...
+2019-11-19 15:36:21.537 INFO  WebSocketClientHandler - channelRead0  false
+2019-11-19 15:36:21.553 INFO  WebSocketClientHandler - WebSocket Client connected!
+2019-11-19 15:36:21.553 INFO  WebSocketClientHandler - response headers[sec-websocket-extensions]:DefaultHttpHeaders[upgrade: websocket, connection: upgrade, sec-websocket-accept: 67zeWKHwnzIBRbU5gefOH9MCjxM=, content-length: 0]
+2019-11-19 15:36:21.560 INFO  DeviceServerHandler - receive webSocket Info:i am websocket
+2019-11-19 15:37:30.112 INFO  DeviceServerHandler - client: /127.0.0.1:52454 connect
+2019-11-19 15:37:30.112 INFO  SocketClient - client send: i am socket
+2019-11-19 15:37:30.159 INFO  DeviceServerHandler - receive socket Info:i am socket
