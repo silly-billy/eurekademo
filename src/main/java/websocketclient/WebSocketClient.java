@@ -1,3 +1,5 @@
+package websocketclient;
+
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -29,12 +31,11 @@ public class WebSocketClient {
                 pipeline.addLast(new ChannelHandler[]{new HttpClientCodec(),
                         new HttpObjectAggregator(1024*1024*10)});
                 pipeline.addLast("hookedHandler", new WebSocketClientHandler());
-
             }
         });
         bootstrap.option(ChannelOption.SO_KEEPALIVE, true);
         try {
-            URI websocketURI = new URI("ws://localhost:8080/ws");
+            URI websocketURI = new URI("ws://localhost:8080/ws?applet=12323432454");
             HttpHeaders httpHeaders = new DefaultHttpHeaders();
             //进行握手
             WebSocketClientHandshaker handshaker = WebSocketClientHandshakerFactory.newHandshaker(websocketURI, WebSocketVersion.V13, (String) null, true, httpHeaders);

@@ -1,8 +1,10 @@
+package nettysocketserver;
+
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.ByteToMessageDecoder;
-import io.netty.handler.codec.FixedLengthFrameDecoder;
-import io.netty.handler.timeout.IdleStateHandler;
+import io.netty.handler.codec.string.StringDecoder;
+import io.netty.handler.codec.string.StringEncoder;
 
 import java.util.List;
 
@@ -25,8 +27,8 @@ public class SocketChooseHandler extends ByteToMessageDecoder {
         if (protocol.startsWith(WEBSOCKET_PREFIX)) {
             pipelineAdd.websocketAdd(ctx);
             //对于 webSocket ，不设置超时断开
-            ctx.pipeline().remove(IdleStateHandler.class);
-            ctx.pipeline().remove(FixedLengthFrameDecoder.class);
+            ctx.pipeline().remove(StringDecoder.class);
+            ctx.pipeline().remove(StringEncoder.class);
         }
         in.resetReaderIndex();
         ctx.pipeline().remove(this.getClass());
@@ -38,9 +40,9 @@ public class SocketChooseHandler extends ByteToMessageDecoder {
         int length = in.readableBytes();
 
 
-        /*byte[] test = new byte[length];
+        byte[] test = new byte[length];
         in.getBytes(in.readerIndex(),test);
-        System.out.println(new String(test));*/
+        System.out.println(new String(test));
 
         if (length > MAX_LENGTH) {
             length = MAX_LENGTH;

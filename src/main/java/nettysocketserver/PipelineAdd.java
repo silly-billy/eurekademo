@@ -1,3 +1,5 @@
+package nettysocketserver;
+
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
@@ -10,7 +12,6 @@ import lombok.extern.slf4j.Slf4j;
 public class PipelineAdd {
     public void websocketAdd(ChannelHandlerContext ctx) {
 
-        log.info("add webSocketHandler...");
         // HttpServerCodec：将请求和应答消息解码为HTTP消息
         ctx.pipeline().addBefore("commonhandler","http-codec",new HttpServerCodec());
 
@@ -22,6 +23,8 @@ public class PipelineAdd {
 
         ctx.pipeline().addBefore("commonhandler","WebSocketAggregator",new WebSocketFrameAggregator(65535));
 
+        //解析uri 带?参数
+        ctx.pipeline().addBefore("commonhandler","url-explained",new CustomUrlHandler());
         //用于处理websocket, /ws为访问websocket时的uri
         ctx.pipeline().addBefore("commonhandler","ProtocolHandler", new WebSocketServerProtocolHandler("/ws"));
     }

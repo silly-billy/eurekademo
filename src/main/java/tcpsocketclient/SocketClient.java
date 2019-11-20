@@ -1,11 +1,12 @@
+package tcpsocketclient;
+
 import io.netty.bootstrap.Bootstrap;
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import io.netty.util.CharsetUtil;
+import io.netty.handler.codec.string.StringDecoder;
+import io.netty.handler.codec.string.StringEncoder;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -21,7 +22,9 @@ public class SocketClient {
             @Override
             protected void initChannel(SocketChannel socketChannel) throws Exception {
                 ChannelPipeline pipeline = socketChannel.pipeline();
-
+                pipeline.addLast(new StringDecoder());
+                pipeline.addLast(new StringEncoder());
+                pipeline.addLast(new SocketClientHandler());
             }
         });
         bootstrap.option(ChannelOption.SO_KEEPALIVE, true);
@@ -31,10 +34,10 @@ public class SocketClient {
             ChannelFuture future = bootstrap.connect(host, port).sync();
 
 
-            byte[] msg = "i am socket".getBytes();
-            ByteBuf byteBuf = Unpooled.copiedBuffer(msg);
-            log.info("client send: {}",byteBuf.toString(CharsetUtil.UTF_8));
-            future.channel().writeAndFlush(byteBuf);
+            /*byte[] msg = "i am socket".getBytes();
+            ByteBuf byteBuf = Unpooled.copiedBuffer(msg);*/
+            //log.info("client send: {}",byteBuf.toString(CharsetUtil.UTF_8));
+            future.channel().writeAndFlush("i am socket");
 
             // 等待服务器  socket 关闭 。
             future.channel().closeFuture().sync();
@@ -51,3 +54,8 @@ public class SocketClient {
         client.connect("127.0.0.1", 8080);
     }
 }
+
+
+
+
+
