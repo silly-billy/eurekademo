@@ -66,3 +66,37 @@
 2019-11-25 09:23:10.711 INFO  nettysocketserver.WebServerHandler - client: [id: 0xa84ad59a, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:51798] disconnect
 2019-11-25 09:23:10.711 INFO  nettysocketserver.WebServerHandler - current channel:[]
 2019-11-25 10:13:15.073 INFO  nettysocketserver.CustomUrlHandler - client: [id: 0x4381769f, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51085] connect
+2019-11-25 10:29:19.105 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:..
+2019-11-25 10:30:02.388 INFO  nettysocketserver.CustomUrlHandler - client: [id: 0xd10cd372, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51933] connect
+2019-11-25 10:30:52.112 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:..
+2019-11-25 10:30:53.864 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:..
+2019-11-25 10:30:54.352 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:..
+2019-11-25 10:30:54.552 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:..
+2019-11-25 10:31:17.964 INFO  nettysocketserver.WebServerHandler - client: [id: 0xd10cd372, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:51933] disconnect
+2019-11-25 10:31:17.968 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-25 10:31:17.997 INFO  nettysocketserver.CustomUrlHandler - client: [id: 0xa4942186, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51991] connect
+2019-11-25 10:31:28.690 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:nihao
+2019-11-25 10:31:34.408 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:what
+2019-11-25 10:31:45.398 INFO  nettysocketserver.WebServerHandler - client: [id: 0x4381769f, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:51085] disconnect
+2019-11-25 10:31:45.399 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-25 10:32:01.989 INFO  nettysocketserver.WebServerHandler - client: [id: 0xa4942186, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:51991] disconnect
+2019-11-25 10:32:01.990 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-25 10:32:02.023 INFO  nettysocketserver.CustomUrlHandler - client: [id: 0x64d94c52, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:52025] connect
+2019-11-25 10:32:07.601 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-25 10:32:10.877 INFO  nettysocketserver.CustomUrlHandler - client: [id: 0x17cce7fa, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:52035] connect
+2019-11-25 10:32:19.369 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-25 10:32:21.416 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-25 10:32:27.348 INFO  nettysocketserver.CustomUrlHandler - client: [id: 0xe3100ccf, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:52051] connect
+2019-11-25 10:32:39.992 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-25 10:32:45.194 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-25 10:32:47.808 INFO  nettysocketserver.WebServerHandler - client: [id: 0x17cce7fa, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:52035] disconnect
+2019-11-25 10:32:47.808 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-25 10:33:29.640 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-25 10:33:43.071 INFO  nettysocketserver.WebServerHandler - client: [id: 0x64d94c52, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:52025] disconnect
+2019-11-25 10:33:43.071 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-25 10:33:44.651 INFO  nettysocketserver.WebServerHandler - client: [id: 0xe3100ccf, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:52051] disconnect
+2019-11-25 10:33:44.652 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-25 10:34:43.108 INFO  nettysocketserver.CustomUrlHandler - client: [id: 0xd2a7d609, L:/127.0.0.1:8080 - R:/127.0.0.1:52174] connect
+2019-11-25 10:34:43.128 INFO  websocketclient.WebSocketClientHandler - WebSocket Client connected!
+2019-11-25 10:34:43.132 INFO  websocketclient.WebSocketClientHandler - response headers[sec-websocket-extensions]:DefaultHttpHeaders[upgrade: websocket, connection: upgrade, sec-websocket-accept: Ej9voWAkrAdTaChUY1+o2r7MgHk=, content-length: 0]
+2019-11-25 10:34:43.135 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:i am websocket
