@@ -37,7 +37,7 @@ public class SocketClient {
             /*byte[] msg = "i am socket".getBytes();
             ByteBuf byteBuf = Unpooled.copiedBuffer(msg);*/
             //log.info("client send: {}",byteBuf.toString(CharsetUtil.UTF_8));
-            future.channel().writeAndFlush("i am socket");
+            future.channel().writeAndFlush("start12323432454end");
 
             // 等待服务器  socket 关闭 。
             future.channel().closeFuture().sync();

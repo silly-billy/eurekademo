@@ -7,6 +7,7 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
+import io.netty.handler.timeout.IdleStateHandler;
 import io.netty.util.ResourceLeakDetector;
 
 public class SocketServer {
@@ -34,15 +35,16 @@ public class SocketServer {
                             // ====================== 增加心跳支持 start    ======================
                             // 针对客户端，如果在1分钟时没有向服务端发送读写心跳(ALL)，则主动断开
                             // 如果是读空闲或者写空闲，不处理
-                           // pipeline.addLast(new IdleStateHandler(0, 0, 15));
+                            pipeline.addLast(new IdleStateHandler(0, 0, 15));
                             // 自定义的空闲状态检测
                             //判断是websocket 还是普通socket
                             //如果是websocket 则添加HttpServerCodec()等   否则添加new ProtobufDecoder（）等
                             pipeline.addLast(new SocketChooseHandler());
                             //注意，这个专门针对 Socket 信息的解码器只能放在 SocketChooseHandler 之后，否则会导致 webSocket 连接出错
-                            ch.pipeline().addLast(new StringDecoder());
-                            ch.pipeline().addLast(new StringEncoder());
-                            ch.pipeline().addLast("commonhandler",new DeviceServerHandler());
+                            pipeline.addLast(new StringDecoder());
+                            pipeline.addLast(new StringEncoder());
+                            pipeline.addLast("devicehandler",new DeviceServerHandler());
+                            pipeline.addLast("webhandler",new WebServerHandler());
                         }
                     })
                     .option(ChannelOption.SO_BACKLOG, 128)          // (5)

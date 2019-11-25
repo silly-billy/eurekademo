@@ -13,19 +13,19 @@ public class PipelineAdd {
     public void websocketAdd(ChannelHandlerContext ctx) {
 
         // HttpServerCodec：将请求和应答消息解码为HTTP消息
-        ctx.pipeline().addBefore("commonhandler","http-codec",new HttpServerCodec());
+        ctx.pipeline().addBefore("webhandler","http-codec",new HttpServerCodec());
 
         // HttpObjectAggregator：将HTTP消息的多个部分合成一条完整的HTTP消息
-        ctx.pipeline().addBefore("commonhandler","aggregator",new HttpObjectAggregator(65535));
+        ctx.pipeline().addBefore("webhandler","aggregator",new HttpObjectAggregator(65535));
 
         // ChunkedWriteHandler：向客户端发送HTML5文件,文件过大会将内存撑爆
-        ctx.pipeline().addBefore("commonhandler","http-chunked",new ChunkedWriteHandler());
+        ctx.pipeline().addBefore("webhandler","http-chunked",new ChunkedWriteHandler());
 
-        ctx.pipeline().addBefore("commonhandler","WebSocketAggregator",new WebSocketFrameAggregator(65535));
+        ctx.pipeline().addBefore("webhandler","WebSocketAggregator",new WebSocketFrameAggregator(65535));
 
         //解析uri 带?参数
-        ctx.pipeline().addBefore("commonhandler","url-explained",new CustomUrlHandler());
+        ctx.pipeline().addBefore("webhandler","url-explained",new CustomUrlHandler());
         //用于处理websocket, /ws为访问websocket时的uri
-        ctx.pipeline().addBefore("commonhandler","ProtocolHandler", new WebSocketServerProtocolHandler("/ws"));
+        ctx.pipeline().addBefore("webhandler","ProtocolHandler", new WebSocketServerProtocolHandler("/ws"));
     }
 }

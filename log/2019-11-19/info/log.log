@@ -19,3 +19,22 @@
 2019-11-19 15:37:30.112 INFO  DeviceServerHandler - client: /127.0.0.1:52454 connect
 2019-11-19 15:37:30.112 INFO  SocketClient - client send: i am socket
 2019-11-19 15:37:30.159 INFO  DeviceServerHandler - receive socket Info:i am socket
+2019-11-19 16:33:28.304 INFO  DeviceServerHandler - client: /127.0.0.1:55205 connect
+2019-11-19 16:33:28.333 INFO  PipelineAdd - add webSocketHandler...
+2019-11-19 16:33:28.455 INFO  WebSocketClientHandler - channelRead0  false
+2019-11-19 16:34:19.488 INFO  WebSocketClientHandler - WebSocket Client connected!
+2019-11-19 16:34:20.000 INFO  WebSocketClientHandler - response headers[sec-websocket-extensions]:DefaultHttpHeaders[upgrade: websocket, connection: upgrade, sec-websocket-accept: 2pCb2mMc+mD3vYdpBw8WNY1xOU4=, content-length: 0]
+2019-11-19 16:34:43.717 INFO  DeviceServerHandler - receive webSocket Info:i am websocket
+2019-11-19 16:35:19.137 INFO  DeviceServerHandler - client: /127.0.0.1:55372 connect
+2019-11-19 16:35:19.184 INFO  PipelineAdd - add webSocketHandler...
+2019-11-19 16:35:19.326 INFO  WebSocketClientHandler - channelRead0  false
+2019-11-19 16:35:38.920 INFO  WebSocketClientHandler - WebSocket Client connected!
+2019-11-19 16:35:42.185 INFO  WebSocketClientHandler - response headers[sec-websocket-extensions]:DefaultHttpHeaders[upgrade: websocket, connection: upgrade, sec-websocket-accept: 1JHUkWQ0evzH2Gg/E+C4iG+rWz4=, content-length: 0]
+2019-11-19 16:35:54.382 INFO  DeviceServerHandler - receive webSocket Info:i am websocket
+2019-11-19 16:40:27.938 INFO  DeviceServerHandler - client: /127.0.0.1:55372 disconnect
+2019-11-19 16:40:36.917 INFO  DeviceServerHandler - client: /127.0.0.1:55592 connect
+2019-11-19 16:40:36.948 INFO  PipelineAdd - add webSocketHandler...
+2019-11-19 16:40:36.979 INFO  WebSocketClientHandler - channelRead0  false
+2019-11-19 16:40:36.995 INFO  WebSocketClientHandler - WebSocket Client connected!
+2019-11-19 16:40:36.995 INFO  WebSocketClientHandler - response headers[sec-websocket-extensions]:DefaultHttpHeaders[upgrade: websocket, connection: upgrade, sec-websocket-accept: c2tIlgZpR+l8wAcEm0zQ2tqdsnw=, content-length: 0]
+2019-11-19 16:40:36.995 INFO  DeviceServerHandler - receive webSocket Info:i am websocket

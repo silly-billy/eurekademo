@@ -1,0 +1,176 @@
+2019-11-22 08:52:14.452 INFO  nettysocketserver.WebServerHandler - client: [id: 0x0930c86f, L:/127.0.0.1:8080 - R:/127.0.0.1:50145] connect
+2019-11-22 08:52:14.490 INFO  nettysocketserver.WebServerHandler - receive socket Info:/127.0.0.1:50145:start12323432454end
+2019-11-22 08:52:29.506 INFO  nettysocketserver.WebServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 08:52:29.507 INFO  nettysocketserver.WebServerHandler - client: /127.0.0.1:50145 disconnect
+2019-11-22 08:52:29.508 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 10:22:51.502 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x644d0768, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:53850] connect
+2019-11-22 10:22:51.507 INFO  nettysocketserver.WebServerHandler - client: [id: 0x644d0768, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:53850] connect
+2019-11-22 10:23:03.238 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-22 10:23:24.994 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x520909ce, L:/127.0.0.1:8080 - R:/127.0.0.1:53871] connect
+2019-11-22 10:23:24.994 INFO  nettysocketserver.WebServerHandler - client: [id: 0x520909ce, L:/127.0.0.1:8080 - R:/127.0.0.1:53871] connect
+2019-11-22 10:23:39.997 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:23:39.998 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:53871 disconnect
+2019-11-22 10:23:39.999 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x520909ce, L:/127.0.0.1:8080 ! R:/127.0.0.1:53871]]
+2019-11-22 10:23:40.000 INFO  nettysocketserver.WebServerHandler - client: [id: 0x520909ce, L:/127.0.0.1:8080 ! R:/127.0.0.1:53871] disconnect
+2019-11-22 10:23:40.000 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 10:23:51.318 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x57ebd337, L:/127.0.0.1:8080 - R:/127.0.0.1:53890] connect
+2019-11-22 10:23:51.318 INFO  nettysocketserver.WebServerHandler - client: [id: 0x57ebd337, L:/127.0.0.1:8080 - R:/127.0.0.1:53890] connect
+2019-11-22 10:23:51.738 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:1
+2019-11-22 10:23:51.842 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:2
+2019-11-22 10:23:52.053 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:3
+2019-11-22 10:23:59.632 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123123
+2019-11-22 10:24:02.492 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:1
+2019-11-22 10:24:02.713 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:2
+2019-11-22 10:24:02.938 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:3
+2019-11-22 10:24:03.361 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:
+
+2019-11-22 10:24:04.143 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:1
+2019-11-22 10:24:04.295 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:2
+2019-11-22 10:24:04.556 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:3
+2019-11-22 10:24:05.106 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:4
+2019-11-22 10:24:05.267 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:2
+2019-11-22 10:24:05.400 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:5
+2019-11-22 10:24:05.513 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:2
+2019-11-22 10:24:05.624 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:3
+2019-11-22 10:24:05.627 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:4
+2019-11-22 10:24:05.746 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:5
+2019-11-22 10:24:05.939 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:
+
+2019-11-22 10:24:06.333 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:
+
+2019-11-22 10:24:06.537 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:
+
+2019-11-22 10:24:21.538 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:24:21.538 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:53890 disconnect
+2019-11-22 10:24:21.539 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x57ebd337, L:/127.0.0.1:8080 ! R:/127.0.0.1:53890]]
+2019-11-22 10:25:11.676 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x8df8af65, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:54019] connect
+2019-11-22 10:25:11.686 INFO  nettysocketserver.WebServerHandler - client: [id: 0x8df8af65, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:54019] connect
+2019-11-22 10:25:14.291 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-22 10:28:49.526 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0xe110df4c, L:/127.0.0.1:8080 - R:/127.0.0.1:54132] connect
+2019-11-22 10:28:49.526 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x8e3838c4, L:/127.0.0.1:8080 - R:/127.0.0.1:54111] connect
+2019-11-22 10:28:49.526 INFO  nettysocketserver.WebServerHandler - client: [id: 0xe110df4c, L:/127.0.0.1:8080 - R:/127.0.0.1:54132] connect
+2019-11-22 10:28:49.527 INFO  nettysocketserver.WebServerHandler - client: [id: 0x8e3838c4, L:/127.0.0.1:8080 - R:/127.0.0.1:54111] connect
+2019-11-22 10:28:49.528 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:
+123
+
+123
+123
+
+
+
+
+
+123
+
+
+
+
+2019-11-22 10:28:50.682 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:54111 disconnect
+2019-11-22 10:28:50.682 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x8e3838c4, L:/127.0.0.1:8080 ! R:/127.0.0.1:54111]]
+2019-11-22 10:29:16.316 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x169a76f6, L:/127.0.0.1:8080 - R:/127.0.0.1:54233] connect
+2019-11-22 10:29:16.322 INFO  nettysocketserver.WebServerHandler - client: [id: 0x169a76f6, L:/127.0.0.1:8080 - R:/127.0.0.1:54233] connect
+2019-11-22 10:29:31.293 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:29:31.310 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:54233 disconnect
+2019-11-22 10:29:31.312 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x169a76f6, L:/127.0.0.1:8080 ! R:/127.0.0.1:54233]]
+2019-11-22 10:29:31.312 INFO  nettysocketserver.WebServerHandler - client: [id: 0x169a76f6, L:/127.0.0.1:8080 ! R:/127.0.0.1:54233] disconnect
+2019-11-22 10:29:31.312 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 10:30:01.245 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x2424822e, L:/127.0.0.1:8080 - R:/127.0.0.1:54335] connect
+2019-11-22 10:30:01.249 INFO  nettysocketserver.WebServerHandler - client: [id: 0x2424822e, L:/127.0.0.1:8080 - R:/127.0.0.1:54335] connect
+2019-11-22 10:30:16.223 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:30:16.240 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:54335 disconnect
+2019-11-22 10:30:16.241 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x2424822e, L:/127.0.0.1:8080 ! R:/127.0.0.1:54335]]
+2019-11-22 10:30:16.241 INFO  nettysocketserver.WebServerHandler - client: [id: 0x2424822e, L:/127.0.0.1:8080 ! R:/127.0.0.1:54335] disconnect
+2019-11-22 10:30:16.242 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 10:31:11.678 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x44ca619a, L:/127.0.0.1:8080 - R:/127.0.0.1:54445] connect
+2019-11-22 10:31:11.684 INFO  nettysocketserver.WebServerHandler - client: [id: 0x44ca619a, L:/127.0.0.1:8080 - R:/127.0.0.1:54445] connect
+2019-11-22 10:31:26.647 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:31:26.663 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:54445 disconnect
+2019-11-22 10:31:26.665 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x44ca619a, L:/127.0.0.1:8080 ! R:/127.0.0.1:54445]]
+2019-11-22 10:31:26.665 INFO  nettysocketserver.WebServerHandler - client: [id: 0x44ca619a, L:/127.0.0.1:8080 ! R:/127.0.0.1:54445] disconnect
+2019-11-22 10:31:26.665 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 10:32:15.704 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0xeb247d00, L:/127.0.0.1:8080 - R:/127.0.0.1:54547] connect
+2019-11-22 10:32:15.708 INFO  nettysocketserver.WebServerHandler - client: [id: 0xeb247d00, L:/127.0.0.1:8080 - R:/127.0.0.1:54547] connect
+2019-11-22 10:32:30.668 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:32:30.684 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:54547 disconnect
+2019-11-22 10:32:30.686 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0xeb247d00, L:/127.0.0.1:8080 ! R:/127.0.0.1:54547]]
+2019-11-22 10:32:30.686 INFO  nettysocketserver.WebServerHandler - client: [id: 0xeb247d00, L:/127.0.0.1:8080 ! R:/127.0.0.1:54547] disconnect
+2019-11-22 10:32:30.687 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 10:39:32.259 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x58cca498, L:/127.0.0.1:8080 - R:/127.0.0.1:55118] connect
+2019-11-22 10:39:32.266 INFO  nettysocketserver.WebServerHandler - client: [id: 0x58cca498, L:/127.0.0.1:8080 - R:/127.0.0.1:55118] connect
+2019-11-22 10:41:10.138 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x571e31d8, L:/127.0.0.1:8080 - R:/127.0.0.1:55241] connect
+2019-11-22 10:41:10.143 INFO  nettysocketserver.WebServerHandler - client: [id: 0x571e31d8, L:/127.0.0.1:8080 - R:/127.0.0.1:55241] connect
+2019-11-22 10:41:11.393 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:41:11.414 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:55241 disconnect
+2019-11-22 10:41:11.416 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x571e31d8, L:/127.0.0.1:8080 ! R:/127.0.0.1:55241]]
+2019-11-22 10:41:11.416 INFO  nettysocketserver.WebServerHandler - client: [id: 0x571e31d8, L:/127.0.0.1:8080 ! R:/127.0.0.1:55241] disconnect
+2019-11-22 10:41:11.416 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 10:43:03.599 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x559d7eff, L:/127.0.0.1:8080 - R:/127.0.0.1:55338] connect
+2019-11-22 10:43:03.603 INFO  nettysocketserver.WebServerHandler - client: [id: 0x559d7eff, L:/127.0.0.1:8080 - R:/127.0.0.1:55338] connect
+2019-11-22 10:43:03.608 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:43:03.621 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:55338 disconnect
+2019-11-22 10:43:03.622 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x559d7eff, L:/127.0.0.1:8080 ! R:/127.0.0.1:55338]]
+2019-11-22 10:43:03.622 INFO  nettysocketserver.WebServerHandler - client: [id: 0x559d7eff, L:/127.0.0.1:8080 ! R:/127.0.0.1:55338] disconnect
+2019-11-22 10:43:03.622 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 10:46:45.533 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x6be3bba4, L:/127.0.0.1:8080 - R:/127.0.0.1:55483] connect
+2019-11-22 10:46:45.538 INFO  nettysocketserver.WebServerHandler - client: [id: 0x6be3bba4, L:/127.0.0.1:8080 - R:/127.0.0.1:55483] connect
+2019-11-22 10:46:45.542 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:46:45.555 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:55483 disconnect
+2019-11-22 10:46:45.556 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x6be3bba4, L:/127.0.0.1:8080 ! R:/127.0.0.1:55483]]
+2019-11-22 10:46:45.556 INFO  nettysocketserver.WebServerHandler - client: [id: 0x6be3bba4, L:/127.0.0.1:8080 ! R:/127.0.0.1:55483] disconnect
+2019-11-22 10:46:45.556 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 10:48:07.488 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x908a15f3, L:/127.0.0.1:8080 - R:/127.0.0.1:55704] connect
+2019-11-22 10:48:07.493 INFO  nettysocketserver.WebServerHandler - client: [id: 0x908a15f3, L:/127.0.0.1:8080 - R:/127.0.0.1:55704] connect
+2019-11-22 10:48:07.497 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:48:07.512 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:55704 disconnect
+2019-11-22 10:48:07.513 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x908a15f3, L:/127.0.0.1:8080 ! R:/127.0.0.1:55704]]
+2019-11-22 10:48:07.513 INFO  nettysocketserver.WebServerHandler - client: [id: 0x908a15f3, L:/127.0.0.1:8080 ! R:/127.0.0.1:55704] disconnect
+2019-11-22 10:48:07.513 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 10:50:40.128 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x55fcbccf, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:55835] connect
+2019-11-22 10:50:40.133 INFO  nettysocketserver.WebServerHandler - client: [id: 0x55fcbccf, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:55835] connect
+2019-11-22 10:50:40.138 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:50:40.152 INFO  nettysocketserver.DeviceServerHandler - client: /0:0:0:0:0:0:0:1:55835 disconnect
+2019-11-22 10:50:40.153 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x55fcbccf, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:55835]]
+2019-11-22 10:50:40.153 INFO  nettysocketserver.WebServerHandler - client: [id: 0x55fcbccf, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:55835] disconnect
+2019-11-22 10:50:40.153 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 10:57:01.244 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x93215377, L:/127.0.0.1:8080 - R:/127.0.0.1:56010] connect
+2019-11-22 10:57:01.252 INFO  nettysocketserver.WebServerHandler - client: [id: 0x93215377, L:/127.0.0.1:8080 - R:/127.0.0.1:56010] connect
+2019-11-22 10:57:01.256 INFO  nettysocketserver.DeviceServerHandler - 心跳检测触发，socket连接断开！
+2019-11-22 10:57:01.271 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:56010 disconnect
+2019-11-22 10:57:01.273 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x93215377, L:/127.0.0.1:8080 ! R:/127.0.0.1:56010]]
+2019-11-22 10:57:01.273 INFO  nettysocketserver.WebServerHandler - client: [id: 0x93215377, L:/127.0.0.1:8080 ! R:/127.0.0.1:56010] disconnect
+2019-11-22 10:57:01.273 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 11:08:26.065 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x6d71d598, L:/127.0.0.1:8080 - R:/127.0.0.1:56954] connect
+2019-11-22 11:08:43.083 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:start12323432454end
+2019-11-22 11:08:43.107 INFO  nettysocketserver.DeviceServerHandler - client: /127.0.0.1:56954 disconnect
+2019-11-22 11:08:43.108 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x6d71d598, L:/127.0.0.1:8080 ! R:/127.0.0.1:56954]]
+2019-11-22 11:09:05.740 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0xe23d89cb, L:/127.0.0.1:8080 - R:/127.0.0.1:56984] connect
+2019-11-22 11:16:22.894 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:1
+2019-11-22 11:16:22.896 INFO  nettysocketserver.DeviceServerHandler - receive socket Info:23
+
+
+2019-11-22 11:16:52.685 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0xb081074c, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:57337] connect
+2019-11-22 11:17:01.593 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0xc21abccc, L:/127.0.0.1:8080 - R:/127.0.0.1:57342] connect
+2019-11-22 11:17:01.784 INFO  nettysocketserver.WebServerHandler - client: [id: 0xb081074c, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:57337] disconnect
+2019-11-22 11:17:01.784 INFO  nettysocketserver.WebServerHandler - client: [id: 0xc21abccc, L:/127.0.0.1:8080 ! R:/127.0.0.1:57342] disconnect
+2019-11-22 11:17:01.785 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x0e81bb6b, L:/127.0.0.1:8080 - R:/127.0.0.1:57348] connect
+2019-11-22 11:17:01.785 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 11:17:01.785 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 11:17:01.786 INFO  nettysocketserver.DeviceServerHandler - client: [id: 0x8df2157c, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:57349] connect
+2019-11-22 11:17:01.788 INFO  nettysocketserver.DeviceServerHandler - client: /0:0:0:0:0:0:0:1:57349 disconnect
+2019-11-22 11:17:01.788 INFO  nettysocketserver.DeviceServerHandler - current channel:[AppletID=[id: 0x8df2157c, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:57349]]
+2019-11-22 11:17:01.788 INFO  nettysocketserver.WebServerHandler - client: [id: 0x8df2157c, L:/0:0:0:0:0:0:0:1:8080 ! R:/0:0:0:0:0:0:0:1:57349] disconnect
+2019-11-22 11:17:01.788 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-22 11:17:22.768 INFO  nettysocketserver.WebServerHandler - client: [id: 0x0e81bb6b, L:/127.0.0.1:8080 - R:/127.0.0.1:57348] connect
+2019-11-22 11:17:22.768 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-22 11:17:30.829 INFO  nettysocketserver.WebServerHandler - client: [id: 0x0e81bb6b, L:/127.0.0.1:8080 - R:/127.0.0.1:57348] connect
+2019-11-22 11:17:30.829 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-22 11:17:31.101 INFO  nettysocketserver.WebServerHandler - client: [id: 0x0e81bb6b, L:/127.0.0.1:8080 - R:/127.0.0.1:57348] connect
+2019-11-22 11:17:31.102 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-22 11:17:31.340 INFO  nettysocketserver.WebServerHandler - client: [id: 0x0e81bb6b, L:/127.0.0.1:8080 - R:/127.0.0.1:57348] connect
+2019-11-22 11:17:31.341 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-22 11:17:31.508 INFO  nettysocketserver.WebServerHandler - client: [id: 0x0e81bb6b, L:/127.0.0.1:8080 - R:/127.0.0.1:57348] connect
+2019-11-22 11:17:31.509 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-22 11:17:31.668 INFO  nettysocketserver.WebServerHandler - client: [id: 0x0e81bb6b, L:/127.0.0.1:8080 - R:/127.0.0.1:57348] connect
+2019-11-22 11:17:31.669 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-22 11:53:04.468 INFO  nettysocketserver.WebServerHandler - client: [id: 0x0e81bb6b, L:/127.0.0.1:8080 ! R:/127.0.0.1:57348] disconnect
+2019-11-22 11:53:04.468 INFO  nettysocketserver.WebServerHandler - current channel:[]

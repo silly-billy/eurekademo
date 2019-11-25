@@ -1,12 +1,17 @@
 package nettysocketserver;
 
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import io.netty.handler.codec.http.websocketx.WebSocketFrame;
+import io.netty.handler.timeout.IdleState;
+import io.netty.handler.timeout.IdleStateEvent;
+import io.netty.util.concurrent.EventExecutorGroup;
 import lombok.extern.slf4j.Slf4j;
 import lombok.var;
+import utils.ChannelWriteUtils;
 
 import java.util.List;
 import java.util.Map;
@@ -14,45 +19,45 @@ import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
-@Slf4j
-public class DeviceServerHandler extends SimpleChannelInboundHandler<Object> {
+import static utils.ChannelWriteUtils.channelWrite;
+import static utils.ChannelWriteUtils.deviceContainer;
 
-    public static Map container = new ConcurrentHashMap<String, List<String>>();
+@Slf4j
+public class DeviceServerHandler extends SimpleChannelInboundHandler<String> {
 
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        log.info("client: "+ctx.channel()+" connect");
-        container.put(ctx.channel(),ctx.channel().remoteAddress());
-        //container.entrySet().stream().forEach(c-> System.out.println(c));
+        /*log.info("client: " + ctx.channel() + " connect");
+        deviceContainer.put("AppletID", ctx.channel());*/
         super.channelActive(ctx);
     }
 
     @Override
-    protected void channelRead0(ChannelHandlerContext channelHandlerContext, Object o) throws Exception {
-        //并不触发，但不重写会报错很烦
+    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        //模拟登入发出的请求
+        if ("login\r\n".equalsIgnoreCase(String.valueOf(msg)))
+        {
+            log.info("client: " + ctx.channel() + " connect");
+            deviceContainer.put("AppletID", ctx.channel());
+        }else {
+            // Socket消息处理
+            String socketInfo = String.valueOf(msg);
+            log.info("receive socket Info:{}", socketInfo);
+            var frame = new TextWebSocketFrame(socketInfo);
+            channelWrite(frame, ctx.channel(), "AppletID");
+        }
+
     }
 
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        // WebSocket消息处理
-        if (msg instanceof WebSocketFrame) {
-            String webSocketInfo = ((TextWebSocketFrame) msg).text().trim();
-            log.info("receive webSocket Info:{}",webSocketInfo);
-            channelWrite(webSocketInfo,ctx.channel());
-        }
-        // Socket消息处理
-        else{
-            String socketInfo = String.valueOf(msg);
-            log.info("receive socket Info:{}",socketInfo);
-            var frame = new TextWebSocketFrame(socketInfo);
-            channelWrite(frame,ctx.channel());
-        }
+    protected void channelRead0(ChannelHandlerContext channelHandlerContext, String s) throws Exception {
+
     }
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
-        /*if (evt instanceof IdleStateEvent) {
+        if (evt instanceof IdleStateEvent) {
             IdleState state = ((IdleStateEvent) evt).state();
             if (state == IdleState.ALL_IDLE) {
                 // 在规定时间内没有收到客户端的上行数据, 主动断开连接
@@ -61,53 +66,22 @@ public class DeviceServerHandler extends SimpleChannelInboundHandler<Object> {
             }
         } else {
             super.userEventTriggered(ctx, evt);
-        }*/
+        }
     }
 
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
-        if (ctx.channel().isActive()){
+        if (ctx.channel().isActive()) {
             ctx.channel().close();
         }
     }
 
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
-        log.info("client: "+ctx.channel().remoteAddress()+" disconnect");
-        container.remove(ctx.channel());
-        log.info("current channel:"+(container.entrySet()));
+        log.info("client: " + ctx.channel().remoteAddress() + " disconnect");
+        deviceContainer.remove(ctx.channel());
+        log.info("current channel:" + (deviceContainer.entrySet()));
         super.channelInactive(ctx);
     }
 
-    private boolean isActive(){
-        //todo 查询同一pos机代码的channel是否存活
-        if (container.size() != 2){
-            return false;
-        }
-        return true;
-    }
-
-    private Channel queryPosChannel(Channel channel){
-        //todo 查询对于POS机的连接
-        if(isActive()){
-            List<Object> channels = (List)container.keySet().stream().filter(f -> f != channel)
-                    .collect(Collectors.toList());
-            return (Channel) channels.get(0);
-        }
-        log.info("DeviceServerHandler.isActive return false");
-        return null;
-    }
-
-    /**
-     * @Description //TODO  webSocket和tcpSocket通信
-     * @Date  2019/11/20
-     * @Param msg channel
-     * @return
-     */
-    private void channelWrite(Object msg,Channel channel){
-        Channel posChannel = queryPosChannel(channel);
-        if (Objects.nonNull(posChannel)){
-            posChannel.writeAndFlush(msg);
-        }
-    }
 }

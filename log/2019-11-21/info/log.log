@@ -1,0 +1,110 @@
+2019-11-21 08:37:14.225 INFO  nettysocketserver.WebServerHandler - client: [id: 0x982c8abd, L:/127.0.0.1:8080 - R:/127.0.0.1:62837] connect
+2019-11-21 08:37:14.256 INFO  nettysocketserver.WebServerHandler - client: /127.0.0.1:62837 disconnect
+2019-11-21 08:37:14.256 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-21 08:38:48.714 INFO  nettysocketserver.WebServerHandler - client: [id: 0x6b49846a, L:/127.0.0.1:8080 - R:/127.0.0.1:63013] connect
+2019-11-21 08:38:48.729 INFO  nettysocketserver.WebServerHandler - client: /127.0.0.1:63013 disconnect
+2019-11-21 08:38:48.729 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-21 08:39:44.200 INFO  nettysocketserver.WebServerHandler - client: [id: 0x59f2832b, L:/127.0.0.1:8080 - R:/127.0.0.1:63091] connect
+2019-11-21 08:39:44.200 INFO  nettysocketserver.WebServerHandler - client: /127.0.0.1:63091 disconnect
+2019-11-21 08:39:44.200 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-21 08:41:00.407 INFO  nettysocketserver.WebServerHandler - client: [id: 0xfe1b3b80, L:/127.0.0.1:8080 - R:/127.0.0.1:63173] connect
+2019-11-21 08:41:00.407 INFO  nettysocketserver.WebServerHandler - client: /127.0.0.1:63173 disconnect
+2019-11-21 08:41:00.407 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-21 08:41:21.307 INFO  nettysocketserver.WebServerHandler - client: [id: 0xb2006a1a, L:/127.0.0.1:8080 - R:/127.0.0.1:63291] connect
+2019-11-21 08:41:21.322 INFO  nettysocketserver.WebServerHandler - client: /127.0.0.1:63291 disconnect
+2019-11-21 08:41:21.322 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-21 08:44:12.423 INFO  nettysocketserver.WebServerHandler - client: [id: 0x1ecacd2b, L:/127.0.0.1:8080 - R:/127.0.0.1:63588] connect
+2019-11-21 08:44:12.454 INFO  nettysocketserver.WebServerHandler - client: /127.0.0.1:63588 disconnect
+2019-11-21 08:44:12.454 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-21 08:47:09.583 INFO  nettysocketserver.WebServerHandler - client: [id: 0x4f90ef88, L:/127.0.0.1:8080 - R:/127.0.0.1:63867] connect
+2019-11-21 08:47:14.178 INFO  nettysocketserver.WebServerHandler - receive socket Info:start12323432454end
+2019-11-21 08:47:28.821 INFO  nettysocketserver.WebServerHandler - client: [id: 0xe2b8f120, L:/127.0.0.1:8080 - R:/127.0.0.1:63912] connect
+2019-11-21 08:47:28.961 INFO  websocketclient.WebSocketClientHandler - WebSocket Client connected!
+2019-11-21 08:47:28.977 INFO  websocketclient.WebSocketClientHandler - response headers[sec-websocket-extensions]:DefaultHttpHeaders[upgrade: websocket, connection: upgrade, sec-websocket-accept: zqiksSFagdsmf+zRUNSWXoaIFUU=, content-length: 0]
+2019-11-21 08:47:28.977 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:i am websocket
+2019-11-21 08:48:02.236 INFO  nettysocketserver.WebServerHandler - client: /127.0.0.1:63867 disconnect
+2019-11-21 08:48:02.236 INFO  nettysocketserver.WebServerHandler - current channel:[[id: 0xe2b8f120, L:/127.0.0.1:8080 - R:/127.0.0.1:63912]=/127.0.0.1:63912]
+2019-11-21 08:48:06.851 INFO  nettysocketserver.WebServerHandler - client: [id: 0x5cb72c88, L:/127.0.0.1:8080 - R:/127.0.0.1:63984] connect
+2019-11-21 08:48:06.882 INFO  nettysocketserver.WebServerHandler - receive socket Info:start12323432454end
+2019-11-21 14:43:35.266 INFO  nettysocketserver.WebServerHandler - client: [id: 0x987ef78f, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:50865] connect
+2019-11-21 14:43:39.863 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-21 14:46:46.356 INFO  nettysocketserver.WebServerHandler - client: [id: 0x696b5b62, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51056] connect
+2019-11-21 14:46:49.807 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:123
+2019-11-21 14:46:59.090 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:我日你先人板板
+2019-11-21 14:47:10.154 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:怎么说
+2019-11-21 14:47:43.340 INFO  nettysocketserver.WebServerHandler - client: [id: 0x56a05caa, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51093] connect
+2019-11-21 14:47:45.542 INFO  nettysocketserver.WebServerHandler - receive socket Info:1
+2019-11-21 14:47:45.641 INFO  nettysocketserver.WebServerHandler - receive socket Info:2
+2019-11-21 14:47:45.863 INFO  nettysocketserver.WebServerHandler - receive socket Info:3
+2019-11-21 14:47:46.628 INFO  nettysocketserver.WebServerHandler - receive socket Info:3
+2019-11-21 14:47:46.848 INFO  nettysocketserver.WebServerHandler - receive socket Info:3
+2019-11-21 14:47:46.955 INFO  nettysocketserver.WebServerHandler - receive socket Info:5
+2019-11-21 14:47:47.055 INFO  nettysocketserver.WebServerHandler - receive socket Info:2
+2019-11-21 14:47:47.389 INFO  nettysocketserver.WebServerHandler - receive socket Info:3
+2019-11-21 14:47:47.389 INFO  nettysocketserver.WebServerHandler - receive socket Info:4
+2019-11-21 14:47:47.568 INFO  nettysocketserver.WebServerHandler - receive socket Info:6
+2019-11-21 14:47:49.344 INFO  nettysocketserver.WebServerHandler - client: /0:0:0:0:0:0:0:1:51093 disconnect
+2019-11-21 14:47:49.344 INFO  nettysocketserver.WebServerHandler - current channel:[[id: 0x696b5b62, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:51056]=/0:0:0:0:0:0:0:1:51056]
+2019-11-21 14:47:50.150 INFO  nettysocketserver.WebServerHandler - client: /0:0:0:0:0:0:0:1:51056 disconnect
+2019-11-21 14:47:50.150 INFO  nettysocketserver.WebServerHandler - current channel:[]
+2019-11-21 15:39:20.765 INFO  nettysocketserver.WebServerHandler - client: [id: 0xb847e9a8, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:53448] connect
+2019-11-21 15:39:23.781 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:b847e9a8:123
+2019-11-21 15:39:26.711 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:b847e9a8:123321
+2019-11-21 15:39:38.975 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:b847e9a8:我好喜欢
+2019-11-21 15:39:57.818 INFO  nettysocketserver.WebServerHandler - client: [id: 0xc2671015, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:53472] connect
+2019-11-21 15:39:58.523 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53472:1
+2019-11-21 15:39:58.676 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53472:2
+2019-11-21 15:39:58.725 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53472:3
+2019-11-21 15:39:58.918 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53472:3
+2019-11-21 15:40:09.424 INFO  nettysocketserver.WebServerHandler - client: /0:0:0:0:0:0:0:1:53472 disconnect
+2019-11-21 15:40:09.425 INFO  nettysocketserver.WebServerHandler - current channel:[[id: 0xb847e9a8, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:53448]=/0:0:0:0:0:0:0:1:53448]
+2019-11-21 15:41:33.672 INFO  nettysocketserver.WebServerHandler - client: [id: 0xdbb42e0c, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:53614] connect
+2019-11-21 15:41:34.795 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:dbb42e0c:
+2019-11-21 15:41:36.263 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:dbb42e0c:
+2019-11-21 15:41:40.383 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:dbb42e0c:我好喜欢
+2019-11-21 15:42:07.858 INFO  nettysocketserver.WebServerHandler - client: [id: 0x2c6cb476, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:53708] connect
+2019-11-21 15:42:08.612 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:2c6cb476:
+2019-11-21 15:42:13.039 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:2c6cb476:你在爪子
+2019-11-21 15:45:37.024 INFO  nettysocketserver.WebServerHandler - client: [id: 0xe85e943d, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:53987] connect
+2019-11-21 15:45:45.080 INFO  nettysocketserver.WebServerHandler - client: [id: 0x59a66664, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:53994] connect
+2019-11-21 15:45:47.565 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53994:1
+2019-11-21 15:45:47.654 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53994:2
+2019-11-21 15:45:47.850 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53994:3
+2019-11-21 15:45:49.231 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53994:3
+2019-11-21 15:45:49.332 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53994:2
+2019-11-21 15:45:49.564 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53994:1
+2019-11-21 15:45:51.705 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:e85e943d:123
+2019-11-21 15:46:06.286 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:e85e943d:321
+2019-11-21 15:46:10.481 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53994:
+
+2019-11-21 15:46:11.049 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53994:
+
+2019-11-21 15:46:11.415 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53994:
+
+2019-11-21 15:46:12.159 INFO  nettysocketserver.WebServerHandler - receive socket Info:/0:0:0:0:0:0:0:1:53994:
+
+2019-11-21 15:47:17.638 INFO  nettysocketserver.WebServerHandler - client: [id: 0x8bb5e6a7, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:54116] connect
+2019-11-21 15:47:25.772 INFO  nettysocketserver.WebServerHandler - client: [id: 0xc99211a1, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:54123] connect
+2019-11-21 15:47:28.091 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:8bb5e6a7:123
+2019-11-21 15:47:38.528 INFO  nettysocketserver.WebServerHandler - client: /0:0:0:0:0:0:0:1:54123 disconnect
+2019-11-21 15:47:38.528 INFO  nettysocketserver.WebServerHandler - current channel:[[id: 0x8bb5e6a7, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:54116]=/0:0:0:0:0:0:0:1:54116]
+2019-11-21 15:47:48.892 INFO  nettysocketserver.WebServerHandler - client: [id: 0x7733300a, L:/127.0.0.1:8080 - R:/127.0.0.1:54136] connect
+2019-11-21 15:47:51.040 INFO  nettysocketserver.WebServerHandler - receive socket Info:/127.0.0.1:54136:
+
+2019-11-21 15:47:51.178 INFO  nettysocketserver.WebServerHandler - receive socket Info:/127.0.0.1:54136:
+
+2019-11-21 15:47:52.019 INFO  nettysocketserver.WebServerHandler - receive socket Info:/127.0.0.1:54136:
+
+2019-11-21 15:47:52.875 INFO  nettysocketserver.WebServerHandler - receive socket Info:/127.0.0.1:54136:133
+
+2019-11-21 15:47:54.855 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:8bb5e6a7:123
+2019-11-21 15:48:48.896 INFO  nettysocketserver.WebServerHandler - receive socket Info:/127.0.0.1:54136:��
+2019-11-21 15:49:38.574 INFO  nettysocketserver.WebServerHandler - client: [id: 0x099d4eb5, L:/0:0:0:0:0:0:0:1:8080 - R:/0:0:0:0:0:0:0:1:54270] connect
+2019-11-21 15:49:49.516 INFO  nettysocketserver.WebServerHandler - client: [id: 0x63ac5835, L:/127.0.0.1:8080 - R:/127.0.0.1:54278] connect
+2019-11-21 15:49:50.580 INFO  nettysocketserver.WebServerHandler - receive socket Info:/127.0.0.1:54278:
+
+2019-11-21 15:49:50.731 INFO  nettysocketserver.WebServerHandler - receive socket Info:/127.0.0.1:54278:
+
+2019-11-21 15:49:52.251 INFO  nettysocketserver.WebServerHandler - receive socket Info:/127.0.0.1:54278:123
+
+2019-11-21 15:49:54.827 INFO  nettysocketserver.WebServerHandler - receive webSocket Info:/0:0:0:0:0:0:0:1:54270:321

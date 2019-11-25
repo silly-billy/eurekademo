@@ -1,0 +1,4 @@
+2019-11-22 08:52:14.502 ERROR nettysocketserver.WebServerHandler - DeviceServerHandler.isActive return false
+2019-11-22 11:08:43.105 ERROR utils.ChannelWriteUtils - ChannelWriteUtils.isActive return false
+2019-11-22 11:16:22.895 ERROR utils.ChannelWriteUtils - ChannelWriteUtils.isActive return false
+2019-11-22 11:16:22.896 ERROR utils.ChannelWriteUtils - ChannelWriteUtils.isActive return false

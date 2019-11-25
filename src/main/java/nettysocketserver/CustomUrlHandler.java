@@ -3,10 +3,17 @@ package nettysocketserver;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.handler.codec.http.FullHttpRequest;
+import lombok.extern.slf4j.Slf4j;
 import org.mortbay.util.MultiMap;
 import org.mortbay.util.UrlEncoded;
 
+import static utils.ChannelWriteUtils.webContainer;
+
+@Slf4j
 public class CustomUrlHandler extends ChannelInboundHandlerAdapter {
+
+
+
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         // 只针对FullHttpRequest类型的做处理，其它类型的自动放过
@@ -20,7 +27,9 @@ public class CustomUrlHandler extends ChannelInboundHandlerAdapter {
                 MultiMap values = new MultiMap();
                 UrlEncoded.decodeTo(query, values, "UTF-8");
                 //todo get values Verification validity
-
+                //WebServerHandler.applet = values.getString("applet");
+                log.info("client: "+ctx.channel()+" connect");
+                webContainer.put("AppletID",ctx.channel());
                 request.setUri(uri.substring(0, idx));
             }
         }
