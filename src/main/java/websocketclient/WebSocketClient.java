@@ -35,7 +35,7 @@ public class WebSocketClient {
         });
         bootstrap.option(ChannelOption.SO_KEEPALIVE, true);
         try {
-            URI websocketURI = new URI("ws://localhost:8080/ws?applet=12323432454");
+            URI websocketURI = new URI("ws://localhost:8080/ws?AppletID=AppletID");
             HttpHeaders httpHeaders = new DefaultHttpHeaders();
             //进行握手
             WebSocketClientHandshaker handshaker = WebSocketClientHandshakerFactory.newHandshaker(websocketURI, WebSocketVersion.V13, (String) null, true, httpHeaders);
