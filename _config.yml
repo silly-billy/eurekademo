@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://localhost:4000
+url: https://silly-billy.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -113,3 +113,5 @@ live2d:
     height: 300      #模型高度
   mobile:
     show: false      #是否在手机端显示
+
+use_cdn: true
