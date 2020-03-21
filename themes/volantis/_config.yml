@@ -1,7 +1,7 @@
 ############################### Basic Information ###############################
 info:
-  name: Volantis
-  version: '2.1.4'
+  name: silly-billy
+  version: 'king'
   docs: https://volantis.js.org/
   cdn: # To use CDN, write 'use_cdn: true' in 'blog/_config.yml'.
     css: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-volantis@2.1.4.3/css/style.css
