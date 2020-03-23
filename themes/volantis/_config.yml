@@ -92,23 +92,23 @@ cover:
   #subtitle: 'A Wonderful Theme for Hexo'
   search: (ಥ _ ಥ)搜一搜有没有想看的
   features:
-    - name: 文档
-      icon: fas fa-book
-      url: https://silly-billy.github.io/
-    - name: 博文
-      icon: fas fa-rss
-      url: #https://volantis.js.org/archives/
-    - name: 示例
-      icon: fas fa-play-circle
-      url: #https://volantis.js.org/examples/
-    - name: 源码
-      icon: fas fa-file-code
-      url: #https://github.com/xaoxuu/hexo-theme-volantis/
-      rel: external nofollow noopener noreferrer
+    - name: 主页
+      icon: fas fa-home fa-fw
+      url: /
+    - name: 分类
+      icon: fas fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fas fa-tags
+      url: tags/
+    - name: 归档
+      icon: fas fa-archive
+      url: archives/
+      #rel: external nofollow noopener noreferrer
       target: _blank
-    - name: 鸣谢
-      icon: fas fa-handshake
-      url: #https://volantis.js.org/contributors/
+    - name: 开源项目
+      icon: fas fa-file-code
+      url: /404.html
 
 
 # Navigation Bar
@@ -121,8 +121,8 @@ navbar:
     # The following can be written in `blog/source/_data/menu.yml`
     # This menu will be displayed on the laptop or desktop.
     on_desktop:
-      - name: 博客
-        icon: fas fa-rss
+      - name: 主页
+        icon: fas fa-home fa-fw
         url: /
       - name: 分类
         icon: fas fa-folder-open
@@ -198,7 +198,7 @@ meta:
   title: # 暂无配置
   # 默认文章作者（可在front-matter中覆盖）
   author:
-    avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
+    avatar: https://cdn.jsdelivr.net/gh/silly-billy/eurekademo@blog_info/static/img/avatar.jpg
     name: silly-billy
     url: #
   # 文章创建日期
@@ -276,10 +276,10 @@ widget:
   blogger:
     class: blogger
     display: [desktop] # [desktop, mobile]
-    avatar: https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png
+    avatar: https://cdn.jsdelivr.net/gh/silly-billy/eurekademo@blog_info/static/img/avatar.jpg
     title:
     subtitle:
-    jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
+    jinrishici: 啊 哒哒哒~ 哒哒哒~
     social: true
   # ---------------------------------------
   # toc widget (valid only in articles)
@@ -300,7 +300,7 @@ widget:
     header:
       icon: fas fa-folder-open
       title: 文章分类
-      url: /blog/categories/
+      url: /categories/
   # ---------------------------------------
   # tagcloud widget
   tagcloud:
@@ -309,7 +309,7 @@ widget:
     header:
       icon: fas fa-tags
       title: 热门标签
-      url: /blog/tags/
+      url: /tags/
     min_font: 14
     max_font: 24
     color: true
@@ -342,8 +342,8 @@ widget:
     height: 64px  # Automatic height if not set
     fancybox: true
     images:
-      - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
-      - https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
+      #- https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
+      #- https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/qrcode/wiki_volantis.png
   # You can add your own widget here or 'blog/source/_data/widget.yml'
   # class: text, list, grid, qrcode, page, ... see more at https://volantis.js.org/
 
@@ -356,11 +356,11 @@ footer:
     - icon: fas fa-rss
       url: atom.xml
     - icon: fas fa-envelope
-      url: mailto:me@xaoxuu.com
+      url: mailto:1579700874@qq.com
     - icon: fab fa-github
-      url: https://github.com/xaoxuu
-    - icon: fas fa-headphones-alt
-      url: https://music.163.com/#/user/home?id=63035382
+      url: https://github.com/silly-billy
+    #- icon: fas fa-headphones-alt
+    #  url: https://music.163.com/#/user/home?id=63035382
   license1: 博客内容遵循 [署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
   info1: 本站使用 [Volantis](https://volantis.js.org/) 作为主题 ， 总访问量为 <span id="busuanzi_value_site_uv"></span> 次
   copyright: '[Copyright © 2017-2020 silly-billy]'
@@ -457,11 +457,11 @@ plugins:
     # Required
     server: netease   # netease, tencent, kugou, xiami, baidu
     type: playlist    # song, playlist, album, search, artist
-    id: 3175833810    # song id / playlist id / album id / search keyword
+    id: 4926244994    # song id / playlist id / album id / search keyword
     # Optional
     fixed: false      # enable fixed mode
     theme: '#1BCDFC'  # main color
-    autoplay: false   # audio autoplay
+    autoplay: false    # audio autoplay
     order: list       # player play order, values: 'list', 'random'
     loop: all         # player loop play, values: 'all', 'one', 'none'
     volume: 0.7       # default volume, notice that player will remember user setting, default volume will not work after user set volume themselves
