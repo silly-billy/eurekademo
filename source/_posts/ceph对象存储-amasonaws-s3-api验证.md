@@ -368,5 +368,80 @@ postman异步返回值：
 
 ### 多线程验证
 
-接着我们需要开启多个线程在ceph服务器上下载同一个文件，以此模拟多用户同时下载某个文件时，ceph服务器是否能够提供有效的下载支持以及验证ceph的稳定性
-...(未完待续)
+接着我们需要开启多个线程在ceph服务器上下载同一个文件，以此模拟多用户同时下载某个文件时，确认ceph服务器是否能够提供有效的下载支持以及验证ceph的稳定性。
+``` java
+/**
+     * 模拟多用户同时下载文件，ceph性能验证
+     * @param key s3桶键值
+     * @param threadNum 线程数
+     * @param path 下载保存路径 n个线程对应n个path
+     * @return
+     */
+    public List<CompletableFuture<Map<String,Double>>> showMultiDownloadDetails(String key,int threadNum,final String... path){
+        //开启多线程
+        var executor = new ThreadPoolExecutor(threadNum, 300, 0L, TimeUnit.MILLISECONDS,
+                new LinkedBlockingDeque<>(1000), new ThreadPoolExecutor.CallerRunsPolicy());
+        List<CompletableFuture<Map<String,Double>>> futures = new ArrayList<>();
+        for (int i = 0; i < threadNum; i++) {
+            int index = i;
+            //保存异步处理结果
+            CompletableFuture.supplyAsync(()->showDownloadDetails(key,path[index]),executor)
+                    .thenAccept(result->{
+                        synchronized (this){
+                            //同一时间多个线程进入arrayList.add方法会出现不安全问题--数据覆盖
+                            futures.add(result);
+                        }
+                    });
+        }
+        while (true) {
+            if (futures.size() < threadNum) {
+                try {
+                    //while(true)这种方式判断的执行级别过高，会阻塞其他子线程的执行
+                    //所以每次判断后需要sleep一段时间
+                    Thread.sleep(100L);
+                } catch (InterruptedException e) {
+                    log.info(e.getMessage());
+                }
+                continue;
+            }
+            break;
+        }
+        if (!executor.isShutdown()){
+            executor.shutdown();
+        }
+        return futures;
+    }
+```
+耗时任务调用单线程的下载逻辑即可，这里简单的通过异步结果数组个数和线程数做判断，用来确定所有异步future返回了结果(因为实现逻辑的线程数和任务处理个数是一致的)，抛弃这个特殊情况，一般多个异步任务判断是否全部执行完毕，是通过定义volatile字段的数值描述线程执行状态。
+注：在多线程的任务调度中，可以通过jdk原生命令调用jps命令获取java运行的pid,然后通过jstack命令查看每个执行线程的堆栈信息，排查问题。
+
+新建一个测试类测试一下结果：
+``` java
+@Test
+    void showDownloadDetails() throws ExecutionException, InterruptedException, IOException {
+        
+    	String key = ***;
+    	int threadNum = ***;
+    	String[] paths = ***;
+        var futures = speedVerifyService.showMultiDownloadDetails(key, threadNum, paths);
+        
+        System.err.println(
+        	futures.stream().map(m->{
+            	try {
+                	return m.get();
+            	} catch (InterruptedException e) {
+               		e.printStackTrace();
+            	} catch (ExecutionException e) {
+                	e.printStackTrace();
+            	}
+            	return null;
+        		});
+			);
+
+    }
+```
+控制台打印结果：
+![result](https://cdn.jsdelivr.net/gh/silly-billy/eurekademo@blog_info/static/ceph/2.png)
+经过多次测试，ceph下载文件在单线程状态下没有任何问题。
+在多线程状态下，ceph的下载速率随着线程数增多，下载速率会变慢。
+如果文件格式过大，比如1G以上的文件，如果开启超过60个线程，会出现丢包的情况,甚至少数线程并没有执行s3的download方法，查看线程堆栈信息，发现此类线程一直处于wait状态。文件越大，可同时开启的线程数就越少，具体问题未知(有空去问问运维)。
