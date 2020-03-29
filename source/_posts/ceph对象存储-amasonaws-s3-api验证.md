@@ -418,30 +418,30 @@ postman异步返回值：
 新建一个测试类测试一下结果：
 ``` java
 @Test
-    void showDownloadDetails() throws ExecutionException, InterruptedException, IOException {
+void showDownloadDetails() throws ExecutionException, InterruptedException, IOException {
         
-    	String key = ***;
-    	int threadNum = ***;
-    	String[] paths = ***;
-        var futures = speedVerifyService.showMultiDownloadDetails(key, threadNum, paths);
+    String key = ***;
+    int threadNum = ***;
+    String[] paths = ***;
+    var futures = speedVerifyService.showMultiDownloadDetails(key, threadNum, paths);
         
-        System.err.println(
-        	futures.stream().map(m->{
-            	try {
-                	return m.get();
-            	} catch (InterruptedException e) {
-               		e.printStackTrace();
-            	} catch (ExecutionException e) {
-                	e.printStackTrace();
-            	}
-            	return null;
-        		});
-			);
+    System.err.println(
+        futures.stream().map(m->{
+            try {
+                return m.get();
+            } catch (InterruptedException e) {
+               	e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+            return null;
+        });
+	)；
 
     }
 ```
 控制台打印结果：
 ![result](https://cdn.jsdelivr.net/gh/silly-billy/eurekademo@blog_info/static/ceph/2.png)
 经过多次测试，ceph下载文件在单线程状态下没有任何问题。
-在多线程状态下，ceph的下载速率随着线程数增多，下载速率会变慢。
+在多线程状态下，ceph的下载速率随着线程数增多，下载速率会变慢。(发现所有线程总的下载速率和单线程情况下几乎一致，可能用的同一个连接的缘故)
 如果文件格式过大，比如1G以上的文件，如果开启超过60个线程，会出现丢包的情况,甚至少数线程并没有执行s3的download方法，查看线程堆栈信息，发现此类线程一直处于wait状态。文件越大，可同时开启的线程数就越少，具体问题未知(有空去问问运维)。
